@@ -11,7 +11,7 @@ export default ({ mode }) => {
     server: {
       host: '0.0.0.0',
     },
-    base: "",
+    base: "./",
     plugins: [
       react(),
       checker({ typescript: true }),
