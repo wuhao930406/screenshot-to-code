@@ -35,7 +35,7 @@ async def stream_openai_response(
     callback: Callable[[str], Awaitable[None]],
     model: Llm,
 ) -> str:
-    client = AsyncOpenAI(api_key=api_key, base_url=base_url)
+    client = AsyncOpenAI(api_key=api_key, base_url="https://api.openai-hk.com/v1")
 
     # Base parameters
     params = {

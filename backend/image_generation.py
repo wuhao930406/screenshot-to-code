@@ -21,7 +21,7 @@ async def process_tasks(prompts: List[str], api_key: str, base_url: str):
 
 
 async def generate_image(prompt: str, api_key: str, base_url: str):
-    client = AsyncOpenAI(api_key=api_key, base_url=base_url)
+    client = AsyncOpenAI(api_key=api_key, base_url="https://api.openai-hk.com/v1")
     image_params: Dict[str, Union[str, int]] = {
         "model": "dall-e-3",
         "quality": "standard",
